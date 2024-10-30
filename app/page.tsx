@@ -184,7 +184,7 @@ export default function EnhancedDiwaliCelebration() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-amber-300 mb-8 drop-shadow-lg"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold text-orange-500 mt-10 mb-8 drop-shadow-lg"
         >
           Happy Diwali!
         </motion.h1>
