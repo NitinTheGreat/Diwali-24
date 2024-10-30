@@ -9,7 +9,7 @@ import confetti from 'canvas-confetti'
 export default function EnhancedDiwaliCelebration() {
   const [isDiyaLit, setIsDiyaLit] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
-  const [isMuted, setIsMuted] = useState(false)
+  // const [isMuted, setIsMuted] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const fireworksIntervalRef = useRef<NodeJS.Timeout | null>(null)
@@ -44,14 +44,14 @@ export default function EnhancedDiwaliCelebration() {
     startFirecrackerShow()
   }, [])
 
-  const toggleMute = useCallback(() => {
-    setIsMuted((prev) => {
-      if (audioRef.current) {
-        audioRef.current.muted = !prev
-      }
-      return !prev
-    })
-  }, [])
+  // const toggleMute = useCallback(() => {
+  //   setIsMuted((prev) => {
+  //     if (audioRef.current) {
+  //       audioRef.current.muted = !prev
+  //     }
+  //     return !prev
+  //   })
+  // }, [])
 
   const launchFireworks = useCallback(() => {
     const duration = 15 * 1000
@@ -89,7 +89,7 @@ export default function EnhancedDiwaliCelebration() {
       const ctx = canvasRef.current.getContext('2d')
       if (ctx) {
         const particles: Particle[] = []
-        const particleCount = 200
+        // const particleCount = 200
 
         class Particle {
           x: number
